@@ -1,0 +1,12 @@
+.nav-item {
+    @apply p-3 flex items-center text-base font-semibold opacity-60 text-white;
+    .icon {
+        @apply w-10 h-6 mr-3 text-xl flex items-center justify-center;
+    }
+    &:hover {
+        @apply cursor-pointer bg-white bg-opacity-10 opacity-100;
+    }
+    &.active {
+        @apply bg-white opacity-100 text-primary-500;
+    }
+}

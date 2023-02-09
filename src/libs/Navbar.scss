@@ -1,0 +1,32 @@
+.navbar.collapsed {
+    width: 65px;
+    box-shadow: 0 0 40 #051a4e50;
+  }
+  
+  .navbar {
+    background: url(./image/bg-nav.jpg) center center;
+    @apply h-full bg-cover p-4 text-white flex flex-col transition-all duration-500;
+    width: 250px;
+    @media (min-width: 1280px) {
+      width: 300px;
+    }
+    .head {
+      .avatar-group {
+        @apply gap-3 flex items-center justify-between;
+      }
+    }
+    .body {
+      @apply flex-1 overflow-y-auto;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+      touch-action: auto;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    .foot {
+      @apply flex flex-col;
+    }
+  }
+  

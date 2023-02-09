@@ -1,0 +1,38 @@
+.app-shell {
+    @apply h-screen w-screen flex;
+    min-width: 720px;
+  
+    .navbar {
+      @apply z-20;
+    }
+    .main {
+      @apply grid flex-1;
+      grid-template-rows: 64px auto;
+      &.has-footer {
+        grid-template-rows: 64px auto 64px;
+      }
+      .topbar {
+        @apply top-0 h-16 w-full px-10 flex items-center justify-between bg-white; //  border-b border-dark border-opacity-20
+        .icon-link {
+          @apply w-6 h-6 opacity-50;
+          &:hover {
+            @apply cursor-pointer opacity-100;
+          }
+        }
+      }
+      .body {
+        @apply px-10 pt-3 overflow-y-auto;
+        // -webkit-overflow-scrolling: touch;
+        // -ms-overflow-style: none; /* IE and Edge */
+        // scrollbar-width: none; /* Firefox */
+        // touch-action: auto;
+        // &::-webkit-scrollbar {
+        //   display: none;
+        // }
+      }
+      // .footer {
+      //   @apply w-full border-t border-dark border-opacity-20 flex items-center px-10 justify-between;
+      // }
+    }
+  }
+  

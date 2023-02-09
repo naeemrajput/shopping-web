@@ -1,0 +1,25 @@
+
+.page-login {
+    // background: url('../../../../assets/bg-main.jpg');
+    background-color: rgb(12, 77, 82);
+    @apply w-screen h-screen bg-cover flex items-center justify-center;
+    .inner {
+      @apply w-full m-auto grid rounded-xl overflow-hidden max-w-4xl mx-4 bg-white shadow-xl;
+      grid-template-columns: 1fr 1fr;
+      .left,
+      .right {
+        @apply p-12 lg:p-16;
+      }
+      .left {
+        // @apply bg-primary-500 flex flex-col justify-center items-start text-white col-span-full sm:col-span-1;
+        @apply bg-green-500 flex flex-col justify-center items-start text-white col-span-full sm:col-span-1;
+      }
+      .right {
+          @apply col-span-full sm:col-span-1;
+        .signin-form {
+          display: grid;
+          gap: 16px;
+        }
+      }
+    }
+  }
